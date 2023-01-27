@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Clock</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Pomodoro Container -->
+<div class="pomodoro-container">
+
+    <!-- Session -->
+    <div class="pomodoro-item">
+        <div id="labelSessionBreak" class="label">Session</div>
+        <div class="row-pomodoro">
+            <div id="timeLeft">25:00</div>
+        </div>
+    </div>
+
+    <!-- Session Length -->
+    <div class="pomodoro-item">
+        <div class="label">Session Length</div>
+        <div class="row-pomodoro">
+            <button id="sessionDecrement" class="btn-updown">-</button>
+            <div id="sessionLength" class="row-pomodoro lengthTime">25</div>
+            <button id="sessionIncrement" class="btn-updown">+</button>
+        </div>
+    </div>
+
+    <!-- Break Length -->
+    <div class="pomodoro-item">
+        <div class="label">Break Length</div>
+        <div class="row-pomodoro">
+            <button id="breakDecrement" class="btn-updown">-</button>
+            <div id="breakLength" class="row-pomodoro lengthTime">5</div>
+            <button id="breakIncrement" class="btn-updown">+</button>
+        </div>
+    </div>
+    
+    <!-- Play/Pause/Reset -->
+    <div class="pomodoro-item playerButton">
+        <div class="row-pomodoro buttonRow">
+            <button id="buttonPlay" class="btn-controller">
+                <i id="playIcon" class="fas fa-play" aria-hidden="true"></i>
+            </button>
+            <button id="buttonReset" class="btn-controller"> 
+                <i class="fas fa-sync" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+  
+</div>
+
+<!-- Sound -->
+<audio id="beep" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/ed4e9fbefd.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
